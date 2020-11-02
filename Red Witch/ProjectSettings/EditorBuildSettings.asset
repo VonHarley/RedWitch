@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MechanicSelect.unity
+    guid: 5f75126079fae044bb5a78d14802ea64
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: dba8be92347842444b9bff37b0698025
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 613e099d6ace3734c8c0fdd63ec25bbd
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: c58c6055d02e72c469ec43808080c49d
+  m_configObjects: {}

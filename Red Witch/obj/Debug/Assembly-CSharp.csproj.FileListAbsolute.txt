@@ -1,0 +1,2 @@
+C:\Users\Benji\Desktop\Adv_Sem_Rep\Red Witch\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Benji\Desktop\Adv_Sem_Rep\Red Witch\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
