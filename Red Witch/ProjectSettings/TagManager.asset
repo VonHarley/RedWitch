@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ShopButtons_S
+  - ShopButtons_P
   layers:
   - Default
   - TransparentFX

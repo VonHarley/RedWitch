@@ -7,21 +7,8 @@ public class ShopData : MonoBehaviour
 
     public string[] invNames;
     public int[] invQuantity;
- //   public int[] invPrice;
+    public int ShopClosure;
 
 
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

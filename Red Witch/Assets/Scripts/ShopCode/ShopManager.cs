@@ -38,6 +38,8 @@ public class ShopManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        shopID = GameObject.Find("Data_Deliverable").GetComponent<DataManager>().RetrieveShopID();
+        FindCity();
         SpawnInventory();
         playerInv = GameObject.Find("PlayerStorage");
         playerInvNames = playerInv.GetComponent<PlayerInventory>().invNames;
@@ -53,9 +55,20 @@ public class ShopManager : MonoBehaviour
         
     }
 
+    void FindCity()
+    {
 
+        GameObject data = GameObject.Find("Data_Deliverable");
+        for (int i = 0; i < data.transform.childCount; i++)
+        {
+            if (data.transform.GetChild(i).name == "PlayerPlacement")
+            {
+                cityName = data.transform.GetChild(i).gameObject.GetComponent<PlayerPlacement>().cityName;
+            }
+        }
+    }
 
-    void SpawnInventory()
+        void SpawnInventory()
     {
         GameObject data = GameObject.Find("Data_Deliverable");
         GameObject shopInv = data.GetComponent<DataManager>().ShopInventory(cityName,shopID);
@@ -200,6 +213,98 @@ public class ShopManager : MonoBehaviour
         DisplayPlayerInv();
     }
 
+
+
+
+
+    public void ConfirmBarter()
+    {
+        int ballanceValue = scale.GetComponent<BallanceScale>().storedValue;
+     //   bool isBallanced;
+     //Shop Scale
+     //Player Scale
+        if (ballanceValue > -1)
+        {
+            string[] itemList = scale.GetComponent<BallanceScale>().shopScale;
+            for (int i = 0; i < itemList.Length; i++)
+            {
+                if (itemList[i] != "")
+                {
+                    int invSlot = 0;
+
+                    for (int j = 0; j < playerInvNames.Length; j++)
+                    {
+                        if (playerInvNames[j] == itemList[i])
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            invSlot++;
+                        }
+                    }
+
+                    playerInvQuantity[invSlot] = playerInvQuantity[invSlot] + 1;
+                }
+            }
+
+            itemList = scale.GetComponent<BallanceScale>().playersScale;
+            for (int i = 0; i < itemList.Length; i++)
+            {
+                if (itemList[i] != "")
+                {
+                    int invSlot = 0;
+
+                    for (int j = 0; j < invNames.Length; j++)
+                    {
+                        if (invNames[j] == itemList[i])
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            invSlot++;
+                        }
+                    }
+
+                    invQuantity[invSlot] = invQuantity[invSlot] + 1;
+                }
+            }
+
+
+
+            scale.GetComponent<BallanceScale>().ClearBallance();
+            DisplayInv();
+            DisplayPlayerInv();
+
+            GameObject[] buttonsShop = GameObject.FindGameObjectsWithTag("ShopButtons_S");
+            for (int i = 0; i < buttonsShop.Length; i++)
+            {
+                buttonsShop[i].GetComponent<Shop_BuySell>().UpdateItemData();
+            }
+            GameObject[] buttonsPlayer = GameObject.FindGameObjectsWithTag("ShopButtons_P");
+            for (int i = 0; i < buttonsShop.Length; i++)
+            {
+                buttonsPlayer[i].GetComponent<Player_BuySell>().UpdateItemData();
+            }
+
+
+            if (ballanceValue > 4)
+            {
+                GameObject.Find("Patronage").GetComponent<PatronManager>().AddPatronage(3);
+            }else
+                if (ballanceValue > 2)
+            {
+                GameObject.Find("Patronage").GetComponent<PatronManager>().AddPatronage(2);
+            }
+            else
+            {
+                GameObject.Find("Patronage").GetComponent<PatronManager>().AddPatronage(1);
+            }
+        }
+        
+
+    }
 
 
 

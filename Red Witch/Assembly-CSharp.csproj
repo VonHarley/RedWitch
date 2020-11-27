@@ -52,23 +52,30 @@
     <UnityVersion>2020.1.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MapCode\ResourceDisplay.cs" />
+    <Compile Include="Assets\Scripts\ShopCode\BallanceScale.cs" />
     <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Scripts\CityManager.cs" />
+    <Compile Include="Assets\Scripts\MapCode\MapController.cs" />
+    <Compile Include="Assets\Scripts\MenuReturn.cs" />
     <Compile Include="Assets\Scripts\SpawnCity.cs" />
     <Compile Include="Assets\Scripts\CityData.cs" />
+    <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\MenuButtons\MenuFunctions.cs" />
+    <Compile Include="Assets\Scripts\ShopCode\BarterButton.cs" />
     <Compile Include="Assets\Scripts\Immortality.cs" />
+    <Compile Include="Assets\Scripts\PlayerPlacement.cs" />
     <Compile Include="Assets\Scripts\ShopCode\ShopData.cs" />
+    <Compile Include="Assets\Scripts\ShopCode\Player_BuySell.cs" />
+    <Compile Include="Assets\Scripts\ShopCode\Shop_BuySell.cs" />
     <Compile Include="Assets\Scripts\ShopCode\Shop.cs" />
     <Compile Include="Assets\Scripts\ShopCode\ShopManager.cs" />
-    <Compile Include="Assets\Scripts\ShopCode\Shop_BuySell.cs" />
-    <Compile Include="Assets\Scripts\PlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\ShopCode\Player_BuySell.cs" />
-    <Compile Include="Assets\Scripts\ShopCode\BallanceScale.cs" />
-    <Compile Include="Assets\Scripts\ShopCode\BarterButton.cs" />
-    <Compile Include="Assets\Scripts\MenuReturn.cs" />
-    <Compile Include="Assets\Scripts\MapCode\ResourceDisplay.cs" />
     <Compile Include="Assets\Scripts\MapCode\MapButtons.cs" />
+    <Compile Include="Assets\Scripts\TimeSystem.cs" />
+    <Compile Include="Assets\Scripts\MapDoom.cs" />
+    <Compile Include="Assets\Scripts\PatronManager.cs" />
+    <Compile Include="Assets\Scripts\MapInfoManager.cs" />
+    <Compile Include="Assets\Scripts\MapButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -185,15 +185,21 @@ public class BallanceScale : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+
+
+    public void ClearBallance()
     {
-        
+
+        for (int i = 0; i < shopScale.Length; i++)
+        {
+            shopScale[i] = "";
+        }
+        for (int i = 0; i < playersScale.Length; i++)
+        {
+            playersScale[i] = "";
+        }
+        CheckScale();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

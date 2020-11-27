@@ -6,16 +6,23 @@ ScriptsOnlyBuild:
     - CityManager
     - DataManager
     - Immortality
+    - MapButtonManager
     - MapButtons
+    - MapController
+    - MapDoom
+    - MapInfoManager
     - MenuFunctions
     - MenuReturn
+    - PatronManager
     - PlayerInventory
+    - PlayerPlacement
     - Player_BuySell
     - ResourceDisplay
     - Shop
     - ShopData
     - ShopManager
     - Shop_BuySell
+    - TimeSystem
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -32,14 +39,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
-    - UnityEditor.Timeline.SequenceHierarchy
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -73,14 +72,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12226}
     - Class: 114
-      Script: {instanceID: 14412}
+      Script: {instanceID: 12356}
+    - Class: 114
+      Script: {instanceID: 12748}
+    - Class: 114
+      Script: {instanceID: 12844}
+    - Class: 114
+      Script: {instanceID: 12922}
+    - Class: 114
+      Script: {instanceID: 13628}
+    - Class: 114
+      Script: {instanceID: 14006}
+    - Class: 114
+      Script: {instanceID: 14348}
+    - Class: 114
+      Script: {instanceID: 14430}
+    - Class: 114
+      Script: {instanceID: 14454}
+    - Class: 114
+      Script: {instanceID: 15090}
+    - Class: 114
+      Script: {instanceID: 15738}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -89,6 +110,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Map.unity:
     - Class: 1
@@ -112,27 +139,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 13616}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 13990}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 14330}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 15072}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 60862}
+      Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 61464}
+      Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 63304}
+      Script: {instanceID: 14454}
+    - Class: 114
+      Script: {instanceID: 15090}
+    - Class: 114
+      Script: {instanceID: 15152}
+    - Class: 114
+      Script: {instanceID: 33302}
+    - Class: 114
+      Script: {instanceID: 50008}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -173,37 +208,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 12226}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 13616}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 13990}
+      Script: {instanceID: 13630}
     - Class: 114
-      Script: {instanceID: 14010}
+      Script: {instanceID: 13680}
     - Class: 114
-      Script: {instanceID: 14330}
+      Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14726}
+      Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 15072}
+      Script: {instanceID: 14454}
     - Class: 114
-      Script: {instanceID: 28542}
+      Script: {instanceID: 14744}
+    - Class: 114
+      Script: {instanceID: 15090}
+    - Class: 114
+      Script: {instanceID: 49166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -242,29 +281,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12028}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 13616}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 13990}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 14330}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 14768}
+      Script: {instanceID: 13872}
     - Class: 114
-      Script: {instanceID: 15072}
+      Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 21170}
+      Script: {instanceID: 14272}
     - Class: 114
-      Script: {instanceID: 32550}
+      Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 37052}
+      Script: {instanceID: 14454}
     - Class: 114
-      Script: {instanceID: 60862}
+      Script: {instanceID: 14786}
+    - Class: 114
+      Script: {instanceID: 15090}
+    - Class: 114
+      Script: {instanceID: 43642}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -310,6 +353,12 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 112bc5192d54f0539e355bc01c1cd85e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResourceDisplay
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -326,6 +375,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5aed65aa8b01203a9fff0ddb145c5e8b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BallanceScale
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -436,6 +491,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 1c6f7aea766eeb56bb89b49aba409a03
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapController
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -470,6 +531,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: PixelPerfectCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuReturn
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -526,13 +593,19 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
+      Hash: c90d5f0860bcf27e7acf78766bde86e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInventory
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6ddc66868d1a628ff8098cd12ca31969
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuFunctions
@@ -548,6 +621,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BarterButton
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -598,13 +677,19 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 4f101af8e2d2ce0a342f3c54ce0ce75d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerPlacement
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: c90d5f0860bcf27e7acf78766bde86e4
+      Hash: f721595aa736751aed2d0528cbdc5e74
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShopData
@@ -614,6 +699,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6961ce02ad343df778dfe2e6cf4e100b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player_BuySell
   - hash:
       serializedVersion: 2
       Hash: 71b711096c6c32621c1d4c02310898b7
@@ -676,6 +767,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 6961ce02ad343df778dfe2e6cf4e100b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shop_BuySell
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -688,7 +785,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 2db66757e88c96632781623ba7d8c111
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shop
@@ -808,6 +905,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 085d51b7d315c671f216e541c0650fa6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapButtons
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -820,56 +923,39 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 6961ce02ad343df778dfe2e6cf4e100b
+      Hash: e60a8b55d8885b76e5ba8fd39fab6f8c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Shop_BuySell
+    className: TimeSystem
   - hash:
       serializedVersion: 2
-      Hash: c90d5f0860bcf27e7acf78766bde86e4
+      Hash: ca74f4761d4f9d91c9f3d1630ae1090c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerInventory
+    className: MapDoom
   - hash:
       serializedVersion: 2
-      Hash: 6961ce02ad343df778dfe2e6cf4e100b
+      Hash: acb49bb469a577bea03157432644d1e0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Player_BuySell
+    className: PatronManager
   - hash:
       serializedVersion: 2
-      Hash: 5aed65aa8b01203a9fff0ddb145c5e8b
+      Hash: 3c1a0aafb805ada64f36f786687a607a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BallanceScale
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BarterButton
+    className: MapInfoManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MenuReturn
-  - hash:
-      serializedVersion: 2
-      Hash: 112bc5192d54f0539e355bc01c1cd85e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ResourceDisplay
-  - hash:
-      serializedVersion: 2
-      Hash: bc0366c2a5b74f98c641f798497fa8f0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MapButtons
+    className: MapButtonManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/MechanicSelect.unity
   - Assets/Scenes/City.unity
   - Assets/Scenes/Shop.unity
   - Assets/Scenes/Map.unity
-  playerPath: C:/Users/Benji/Desktop/Adv_Sem_Rep/Builds/Red Witch.exe
+  playerPath: C:/Users/Benji/Desktop/Desktoppp/ReoTestTwo/RedWitch.git/Builds/RedWitch_MechanicsBuild/Red
+    Witch.exe

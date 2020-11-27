@@ -30,6 +30,12 @@ public class Shop_BuySell : MonoBehaviour
         }
     }
 
+    public void UpdateItemData()
+    {
 
+        itemName = Manager.GetComponent<ShopManager>().invNames[tier];
+        itemAmount = Manager.GetComponent<ShopManager>().invQuantity[tier];
+
+    }
 
 }

@@ -14,6 +14,8 @@ public class MapButtons : MonoBehaviour
 
     public GameObject inv;
     public GameObject display;
+
+    public string cityName;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +54,8 @@ public class MapButtons : MonoBehaviour
                 player.transform.position = transform.position;
                 TakeCost();
                 display.GetComponent<ResourceDisplay>().DisplayAmounts();
+                GameObject data = GameObject.Find("Data_Deliverable");
+                data.GetComponent<DataManager>().NewPlace(cityName);
             }
         }
 
@@ -59,7 +63,14 @@ public class MapButtons : MonoBehaviour
 
     }
 
-
+    public void ForceMovePlayer()
+    {
+        occupied = true;
+        player.transform.position = transform.position;
+    //    display.GetComponent<ResourceDisplay>().DisplayAmounts();
+  //      GameObject data = GameObject.Find("Data_Deliverable");
+  //      data.GetComponent<DataManager>().NewPlace(cityName);
+    }
 
 
     void TakeCost()
